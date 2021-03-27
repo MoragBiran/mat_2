@@ -7,7 +7,7 @@ def countword():
     fname = 'text.txt'
     fh = open(fname, "r")
     first_word = fh.read()
-    first_word = first_word.split()[0]
+    first_word = first_word.split()[0].lower()
     count = 1
     with open(fname, 'r') as a_file:
         for line in a_file:
