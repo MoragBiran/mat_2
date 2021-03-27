@@ -2,9 +2,9 @@ def revword(word):
     word = word.lower()
     return word[::-1]
 
-fname = 'text.txt'
 
-def countword(fname):
+def countword():
+    fname = 'text.txt'
     fh = open(fname, "r")
     first_word = fh.read()
     first_word = first_word.split()[0]
